@@ -285,9 +285,12 @@ footer p{font-size:.8rem;opacity:.45}
       <!-- IMAGEM OVERLAY (DEPOIS - Mostrada na direita) -->
       <img src="antes.jpg" alt="Depois" id="ba-after" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; clip-path:inset(0 0 0 50%); pointer-events:none;">
       
-      <!-- BARRA CENTRALIZADORA -->
-      <div id="ba-handle" style="position:absolute; top:0; left:50%; bottom:0; width:4px; background:#fff; transform:translateX(-50%); display:flex; align-items:center; justify-content:center; box-shadow:0 0 10px rgba(0,0,0,0.5); pointer-events:none;">
-        <div style="width:40px; height:40px; background:linear-gradient(135deg, #ff6a00, #ee0979); border:3px solid #fff; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 10px rgba(0,0,0,0.5);">
+      <!-- BARRA CENTRALIZADORA (Área de toque invisível mais larga) -->
+      <div id="ba-handle" style="position:absolute; top:0; left:50%; bottom:0; width:40px; background:transparent; transform:translateX(-50%); display:flex; align-items:center; justify-content:center; cursor:ew-resize; z-index:10; touch-action:none;">
+        <!-- Linha fina branca -->
+        <div style="position:absolute; top:0; bottom:0; width:4px; background:#fff; box-shadow:0 0 10px rgba(0,0,0,0.5);"></div>
+        <!-- Botão redondo -->
+        <div style="position:relative; width:40px; height:40px; background:linear-gradient(135deg, #ff6a00, #ee0979); border:3px solid #fff; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 2px 10px rgba(0,0,0,0.5);">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="transform:rotate(180deg); margin-left:-6px;"><path d="M15 18l-6-6 6-6"/></svg>
         </div>
@@ -328,8 +331,8 @@ footer p{font-size:.8rem;opacity:.45}
         }
       }
       
-      slider.addEventListener('mousedown', () => isDragging = true);
-      slider.addEventListener('touchstart', (e) => { isDragging = true; updateSlider(e); });
+      handle.addEventListener('mousedown', () => isDragging = true);
+      handle.addEventListener('touchstart', () => isDragging = true);
       window.addEventListener('mouseup', () => isDragging = false);
       window.addEventListener('touchend', () => isDragging = false);
       window.addEventListener('mousemove', updateSlider);
