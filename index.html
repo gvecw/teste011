@@ -68,6 +68,14 @@ body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#fff;overflow-x:hid
 .carousel-track{display:flex;align-items:center;gap:30px;width:max-content;padding:10px 0;will-change:transform}
 .carousel-track img{height:110px;width:auto;min-width:80px;object-fit:contain;flex-shrink:0;transition:transform .3s;transform:translateZ(0)}
 .carousel-track img:hover{transform:scale(1.08) translateZ(0)}
+.carousel-track img[src="no-precinho.png"] { transform:scale(1.9) translateZ(0); margin:0 30px; }
+.carousel-track img[src="no-precinho.png"]:hover { transform:scale(2.0) translateZ(0); }
+
+.carousel-track img[src="Cópia_de_PAGANDOMUITO-removebg-preview.png"] { transform:scale(2.2) translateZ(0); margin:0 40px; }
+.carousel-track img[src="Cópia_de_PAGANDOMUITO-removebg-preview.png"]:hover { transform:scale(2.3) translateZ(0); }
+
+.carousel-track img[src="13__1_-removebg-preview.png"] { transform:scale(2.8) translateZ(0); margin:0 60px; }
+.carousel-track img[src="13__1_-removebg-preview.png"]:hover { transform:scale(2.9) translateZ(0); }
 .track-left{animation:scrollLeft 18s linear infinite}
 .track-right{animation:scrollRight 18s linear infinite}
 @keyframes scrollLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -148,8 +156,8 @@ footer p{font-size:.8rem;opacity:.45}
 .modal-close:hover{opacity:1}
 .modal-title{font-family:'Montserrat',sans-serif;font-size:1.5rem;font-weight:800;margin-bottom:15px;color:#fff;text-align:center}
 .modal-title span{color:#ff6a00}
-.niche-list{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}
-.niche-tag{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#ccc;padding:8px 16px;border-radius:50px;font-size:.95rem;font-weight:500;transition:all .2s;display:flex;align-items:center;gap:6px}
+.niche-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.niche-tag{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#ccc;padding:10px 14px;border-radius:12px;font-size:.9rem;font-weight:600;transition:all .2s;display:flex;align-items:center;justify-content:flex-start;gap:8px}
 .niche-tag:hover{background:rgba(255,106,0,.1);border-color:#ff6a00;color:#fff}
 /* FLOATING NICHES BUTTON */
 .floating-niches-btn{position:fixed;bottom:25px;right:25px;background:linear-gradient(135deg,#ff6a00,#ee0979);color:#fff;display:flex;align-items:center;gap:8px;padding:12px 20px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:.95rem;box-shadow:0 10px 30px rgba(255,106,0,.5);cursor:pointer;z-index:9999;transition:transform .3s,box-shadow .3s;animation:floatPulse 2.5s infinite}
@@ -181,16 +189,16 @@ footer p{font-size:.8rem;opacity:.45}
   <div style="width: 100%; overflow:hidden; padding: 20px 0; position: relative; z-index: 1;">
     <div class="carousel-wrapper" style="margin-top:0">
       <div class="carousel-track track-left">
-        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
-        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
-        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
-        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
+        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+        <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
       </div>
       <div class="carousel-track track-right">
-        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
-        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
-        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
-        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
+        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+        <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
       </div>
     </div>
   </div>
@@ -324,17 +332,17 @@ footer p{font-size:.8rem;opacity:.45}
 
     <!-- FILEIRA 1 → indo para ESQUERDA -->
     <div class="carousel-track track-left">
-      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
-      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
-      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
-      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/>
+      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+      <img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="ATIVAR-O-VALE-2.png" alt="Ativar o Vale"/><img src="BOM-DIA-1.png" alt="Bom Dia"/><img src="FAZ-E-SACA-2.png" alt="Faz e Saca"/><img src="NAO-PERDE-TEMPO-2.png" alt="Não Perde Tempo"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="Prancheta-1.png" alt="Prancheta"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
     </div>
 
     <div class="carousel-track track-right">
-      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
-      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
-      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
-      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/>
+      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
+      <img src="VENDAS-LIBERADAS-3.png" alt="Vendas Liberadas"/><img src="bom-dia-2.png" alt="Bom Dia 2"/><img src="pers.png" alt="Pers"/><img src="saiu.png" alt="Saiu"/><img src="Prancheta-1 (1).png" alt="Prancheta 2"/><img src="ATENDIMENTO-ON-2.png" alt="Atendimento On"/><img src="NOVIDADE-2.png" alt="Novidade"/><img src="no-precinho.png" alt="No Precinho"/><img src="Cópia_de_PAGANDOMUITO-removebg-preview.png" alt="Pagando Muito"/><img src="13__1_-removebg-preview.png" alt="Tropa do Faz e Saca"/>
     </div>
 
   </div>
@@ -526,8 +534,20 @@ function closeNichesModal(e) { if(e) e.preventDefault(); document.getElementById
     </p>
     <div class="niche-list">
       <div class="niche-tag">🎟️ Rifa</div>
-      <div class="niche-tag">🏍️ 244 (Motos)</div>
-      <div class="niche-tag" style="opacity: 0.5; border: 1px dashed rgba(255,255,255,0.2);">+ E muitos outros...</div>
+      <div class="niche-tag">💈 Barbearia</div>
+      <div class="niche-tag">🎰 Cassino Bet</div>
+      <div class="niche-tag">💬 Engaja Story</div>
+      <div class="niche-tag">🚲 Grau Bike</div>
+      <div class="niche-tag">🏍️ Grau 244</div>
+      <div class="niche-tag">🔴 Motos Honda</div>
+      <div class="niche-tag">🏍️ XT 660</div>
+      <div class="niche-tag">🛵 CG 125 a 160</div>
+      <div class="niche-tag">📱 Rede Social</div>
+      <div class="niche-tag">💳 Pagamentos</div>
+      <div class="niche-tag">🕶️ Mandrake</div>
+      <div class="niche-tag">🚗 Saveiro Rebaixada</div>
+      <div class="niche-tag">🎶 Funk</div>
+      <div class="niche-tag" style="grid-column: 1 / -1; justify-content: center; opacity: 0.5; border: 1px dashed rgba(255,255,255,0.2);">+ Muito mais!</div>
     </div>
     <div style="text-align:center; margin-top: 25px;">
       <button class="btn-cta" onclick="closeNichesModal(event)" style="padding: 10px 24px; font-size: 0.9rem; box-shadow: none;">FECHAR</button>
